@@ -1,1 +1,56 @@
-File 1 Git
+Docker Quarkus
+================
+
+docker images
+docker start <container id>
+docker stop <container id>
+docker rm <container id>
+docker ps
+project is in root/proj/home
+
+docker run -dp 127.0.0.1:8080:8080 -it renzocherin/jdk-quarkus-go:v2.1
+
+./mvnw quarkus:dev
+========================================
+
+GIT
+=======
+create a new repository on the command line
+ 
+ 
+echo "# sample_repo" >> README.md
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:satishgssk/sample_repo.git
+git push -u origin main
+ 
+ 
+==push an existing repository from the command line
+ 
+git remote add origin git@github.com:satishgssk/sample_repo.git
+
+==to sitch from other remote origin
+ 
+git remote set-url origin git@github.com:satishgssk/sample_repo.git
+
+git branch -M main
+git push -u origin main
+git log --oneline
+git merge feature-A
+git add branch.py
+git commit -m "MC : merge conflict"
+ 
+git reset --hard  --> completely Undo the changes
+git reset --soft --> Move from commit Tree to Indexed/Staging
+git reset --mixed  --> move from commit area to Working Tree
+
+Linux Commands to install and run python app
+============================================
+Ubuntu 
+sudo apt update
+sudo apt install python3-pip
+pip3 install -r requirements.txt --user
+python3 lbg.py
